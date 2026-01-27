@@ -35,13 +35,13 @@ AI-powered app icon generation with full iOS 26 Liquid Glass support and Android
 Install all Code with Beto skills with a single command:
 
 ```bash
-npx skills add cwb/skills
+npx skills add code-with-beto/skills
 ```
 
 Or install individual plugins:
 
 ```bash
-npx skills add cwb/skills/cwb-app-icon
+npx skills add code-with-beto/skills/cwb-app-icon
 ```
 
 ## Requirements
