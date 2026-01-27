@@ -1,0 +1,19 @@
+{
+  "name": "cwb-plugins",
+  "owner": {
+    "name": "Beto",
+    "email": "beto@codewithbeto.dev"
+  },
+  "metadata": {
+    "description": "codewithbeto.dev plugins for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "cwb-app-icon",
+      "source": {
+        "source": "plugins/cwb-app-icon"
+      },
+      "description": "CWB's app icon for Claude Code"
+    }
+  ]
+}
