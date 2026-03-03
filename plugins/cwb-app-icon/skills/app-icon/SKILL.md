@@ -138,7 +138,7 @@ To ensure your icon displays correctly on all Android device shapes (circles, sq
 **Using ImageMagick (recommended):**
 ```bash
 # Scale the icon to 66% and center it on a 1024x1024 transparent canvas
-convert assets/icon-[timestamp].png \
+magick assets/icon-[timestamp].png \
   -resize 66% \
   -gravity center \
   -background transparent \
@@ -152,7 +152,7 @@ convert assets/icon-[timestamp].png \
 sips -Z 676 assets/icon-[timestamp].png --out /tmp/icon-resized.png
 
 # Step 2: Create the final centered image
-convert -size 1024x1024 xc:transparent /tmp/icon-resized.png \
+magick -size 1024x1024 xc:transparent /tmp/icon-resized.png \
   -gravity center -composite assets/android-icon.png
 ```
 
