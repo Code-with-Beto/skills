@@ -4,7 +4,7 @@ AI-powered app icon generation for React Native Expo apps with full iOS 26 Liqui
 
 ## What This Plugin Does
 
-- **Generates app icons** using AI via the SnapAI CLI tool (powered by OpenAI)
+- **Generates app icons** using AI via [SnapAI](https://github.com/betomoedano/snapai), an open-source CLI by the Code with Beto team.
 - **Creates iOS 26 .icon folder** with proper Liquid Glass icon format for modern iOS apps
 - **Configures Android adaptive icons** with support for foregroundImage, backgroundImage, and monochromeImage
 - **Updates app.json automatically** with correct paths for both iOS and Android
@@ -82,6 +82,10 @@ If you want to try different styles:
 - OpenAI API key (costs ~$0.04 per icon)
 - Expo project with app.json
 - SnapAI CLI (automatically used via npx)
+
+## About SnapAI
+
+[SnapAI](https://github.com/betomoedano/snapai) is a free, open-source CLI built by the [Code with Beto](https://codewithbeto.dev) team. It uses your own OpenAI API key to generate icons — the only cost is standard OpenAI API usage (~$0.04 per icon). Your API key is stored in a local config file on your machine (`~/.snapai/config.json`) and is sent directly to OpenAI's API. SnapAI ships no telemetry, has no backend server, and collects zero data; credentials never leave your device.
 
 ## License
 

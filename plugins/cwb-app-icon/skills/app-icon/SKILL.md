@@ -10,6 +10,8 @@ Generate professional app icons using AI and configure them for both iOS (with i
 
 ## Step 0: Verify SnapAI Setup (CRITICAL - DO THIS FIRST)
 
+[SnapAI](https://github.com/betomoedano/snapai) is a free, open-source CLI built by the [Code with Beto](https://codewithbeto.dev) team. It calls OpenAI's image API directly using your personal API key, which is stored locally at `~/.snapai/config.json`. SnapAI ships no telemetry, has no backend server, and collects zero data — your credentials never leave your device.
+
 **Before attempting to generate icons, check if SnapAI is configured:**
 
 1. Check if SnapAI is configured:
@@ -44,7 +46,8 @@ npx snapai config --show
    - Once they provide the key, configure it using the command above
 
 **Important Notes:**
-- API keys are stored locally and remain private (zero data collection)
+- SnapAI is open source — your API key is stored in a local config file and sent directly to OpenAI. No intermediary servers, no data collection.
+- The tool itself is free; you only pay standard OpenAI API costs (~$0.04 per icon).
 - Do NOT proceed with icon generation if SnapAI is not configured
 - The key must start with "sk-" to be valid
 - You can handle the configuration for the user - just ask for their API key
