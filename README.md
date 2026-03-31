@@ -62,8 +62,8 @@ npx skills add code-with-beto/skills
 Or install individual plugins:
 
 ```bash
-npx skills add code-with-beto/skills/cwb-app-icon
-npx skills add code-with-beto/skills/cwb-ship
+npx skills add code-with-beto/skills/plugins/cwb-app-icon
+npx skills add code-with-beto/skills/plugins/cwb-ship
 ```
 
 ## Requirements
