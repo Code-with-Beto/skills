@@ -30,6 +30,27 @@ AI-powered app icon generation with full iOS 26 Liquid Glass support and Android
 
 [View full documentation →](plugins/cwb-app-icon/README.md)
 
+### 🚀 Ship Plugin
+
+Scaffold production-ready React Native apps from Code with Beto templates using the `@codewithbeto/ship` CLI.
+
+**Features:**
+
+- One-command project scaffolding with `bunx @codewithbeto/ship`
+- Pre-configured RevenueCat payments integration
+- Automatic app name, bundle ID, and slug configuration
+- Dependency installation and git initialization out of the box
+- Non-interactive flag-based mode for AI agent compatibility
+
+**Use cases:**
+
+- Ship a revenue-ready AI image app this weekend
+- Skip boilerplate and start building features immediately
+- Scaffold from the battle-tested Platano template
+- Automate project creation in CI or with AI agents
+
+[View full documentation →](plugins/cwb-ship/README.md)
+
 ## Installation
 
 Install all Code with Beto skills with a single command:
@@ -42,6 +63,7 @@ Or install individual plugins:
 
 ```bash
 npx skills add code-with-beto/skills/cwb-app-icon
+npx skills add code-with-beto/skills/cwb-ship
 ```
 
 ## Requirements
@@ -49,7 +71,8 @@ npx skills add code-with-beto/skills/cwb-app-icon
 - Node.js 16+
 - npm or npx
 - Expo CLI (for app icon plugin)
-- OpenAI API key (for AI-powered features)
+- OpenAI API key (for AI-powered icon generation)
+- [Bun](https://bun.sh/) runtime (for ship plugin)
 
 ## How It Works
 

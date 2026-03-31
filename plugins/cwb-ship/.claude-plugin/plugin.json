@@ -1,0 +1,9 @@
+{
+  "name": "cwb-ship",
+  "version": "1.0.0",
+  "description": "Scaffold production-ready React Native apps from Code with Beto templates using @codewithbeto/ship",
+  "author": {
+    "name": "Beto",
+    "email": "beto@codewithbeto.dev"
+  }
+}
