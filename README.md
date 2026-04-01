@@ -96,8 +96,8 @@ No manual configuration needed - just describe what you want to build.
 ## Support
 
 - 📚 Learn React Native & Expo: [codewithbeto.dev](https://codewithbeto.dev)
-- 💬 Questions or issues? [Open an issue](https://github.com/cwb-org/skills/issues)
-- 🐦 Follow updates: [@codewithbeto](https://twitter.com/codewithbeto)
+- 💬 Questions or issues? [Open an issue](https://github.com/code-with-beto/skills/issues)
+- 🐦 Follow updates: [@codewithbeto](https://x.com/betomoedano)
 
 ## Contributing
 
