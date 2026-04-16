@@ -1,0 +1,9 @@
+{
+  "name": "cwb-local-build",
+  "version": "1.0.0",
+  "description": "codewithbeto.dev local builds (APK and .app) for Claude Code",
+  "author": {
+    "name": "Beto",
+    "email": "beto@codewithbeto.dev"
+  }
+}
