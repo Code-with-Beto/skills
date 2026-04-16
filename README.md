@@ -51,6 +51,26 @@ Scaffold production-ready React Native apps from Code with Beto templates using 
 
 [View full documentation →](plugins/cwb-ship/README.md)
 
+### 🛠 Local Build Plugin
+
+Generate release `.apk` and simulator `.app` artifacts for your Expo project using `gradlew` and `xcodebuild` directly, no EAS required.
+
+**Features:**
+
+- Reads your `app.config.ts` / `app.json` to pull app name, slug, scheme, and bundle identifier
+- Verifies the iOS scheme on disk so the build command matches what Xcode generated
+- Writes `scripts/build-android.sh` and `scripts/build-ios.sh` with your real values baked in
+- Copies each artifact into `builds/` (replacing the previous one) for predictable install paths
+- Defaults to **Release** to avoid the `expo-dev-client` launcher screen
+
+**Use cases:**
+
+- Producing APKs and `.app` bundles for e2e tests (Maestro, Detox)
+- Sharing a real build with a teammate without spinning up a dev server
+- Iterating on a local device or simulator without waiting on remote builds
+
+[View full documentation →](plugins/cwb-local-build/README.md)
+
 ## Installation
 
 Install all Code with Beto skills with a single command:
@@ -64,6 +84,7 @@ Or install individual plugins:
 ```bash
 npx skills add code-with-beto/skills/plugins/cwb-app-icon
 npx skills add code-with-beto/skills/plugins/cwb-ship
+npx skills add code-with-beto/skills/plugins/cwb-local-build
 ```
 
 ## Requirements
