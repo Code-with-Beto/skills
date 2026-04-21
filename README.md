@@ -53,7 +53,7 @@ Scaffold production-ready React Native apps from Code with Beto templates using 
 
 ### 🛠 Local Build Plugin
 
-Generate release `.apk` and simulator `.app` artifacts for your Expo project using `gradlew` and `xcodebuild` directly, no EAS required.
+Generate release `.apk` and simulator `.app` artifacts for your Expo project using `gradlew` and `xcodebuild` directly.
 
 **Features:**
 
