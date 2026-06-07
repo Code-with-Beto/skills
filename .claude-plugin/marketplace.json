@@ -21,6 +21,13 @@
         "source": "plugins/cwb-ship"
       },
       "description": "Scaffold production-ready React Native apps using @codewithbeto/ship CLI"
+    },
+    {
+      "name": "cwb-theming",
+      "source": {
+        "source": "plugins/cwb-theming"
+      },
+      "description": "Scaffold a unified cross-platform color theme system (native iOS + Android Material You) into an Expo Router app"
     }
   ]
 }

@@ -71,6 +71,29 @@ Generate release `.apk` and simulator `.app` artifacts for your Expo project usi
 
 [View full documentation →](plugins/cwb-local-build/README.md)
 
+### 🎨 Theming Plugin
+
+Scaffold a unified, cross-platform color system into an Expo Router app, using the same theming pattern as the Platano template.
+
+**Features:**
+
+- Semantic system tokens (`background`, `text`, `secondaryText`, `separator`, `link`, ...) that resolve to native iOS colors and Android Material You dynamic colors
+- Brand colors with optional Android Material You dynamic resolution
+- Automatic dark/light re-rendering via `useColorScheme()` and the navigation `ThemeProvider`
+- A `useColors()` / `useTheme()` / `useBrand()` context hook built on React's `use`
+- Adds a theme context if you don't have one and wires your root `_layout.tsx` without clobbering existing providers
+
+**Use cases:**
+
+- Setting up theming or dark mode in an Expo / React Native app
+- Getting native iOS + Android Material You colors from one set of names
+- Replacing scattered `Platform.OS` color branching with a single `useColors()` hook
+- Following the "Expo UI on Android" lesson and wanting Platano-style theming
+
+**Requires Expo SDK 56+** (older SDKs work with hex tokens and the React Navigation `ThemeProvider`).
+
+[View full documentation →](plugins/cwb-theming/README.md)
+
 ## Installation
 
 Install all Code with Beto skills with a single command:
@@ -85,6 +108,7 @@ Or install individual plugins:
 npx skills add code-with-beto/skills/plugins/cwb-app-icon
 npx skills add code-with-beto/skills/plugins/cwb-ship
 npx skills add code-with-beto/skills/plugins/cwb-local-build
+npx skills add code-with-beto/skills/plugins/cwb-theming
 ```
 
 ## Requirements
