@@ -1,0 +1,27 @@
+{
+  "name": "cwb-ship",
+  "version": "1.0.0",
+  "description": "Scaffold production-ready React Native apps from Code with Beto templates using the @codewithbeto/ship CLI.",
+  "author": {
+    "name": "Beto",
+    "email": "beto@codewithbeto.dev",
+    "url": "https://codewithbeto.dev"
+  },
+  "homepage": "https://cwb.sh/platano",
+  "repository": "https://github.com/Code-with-Beto/skills",
+  "license": "MIT",
+  "keywords": ["expo", "react-native", "scaffold", "template", "platano", "revenuecat"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CWB Ship",
+    "shortDescription": "Scaffold production-ready React Native apps",
+    "longDescription": "One-command project scaffolding with bunx @codewithbeto/ship. Ships the battle-tested Platano template with pre-configured RevenueCat payments, automatic app name, bundle ID and slug configuration, dependency installation, and git initialization out of the box.",
+    "developerName": "Code with Beto",
+    "category": "Developer Tools",
+    "websiteURL": "https://cwb.sh/platano",
+    "defaultPrompt": [
+      "Scaffold a new React Native app with the ship CLI",
+      "Create a revenue-ready AI image app from the Platano template"
+    ]
+  }
+}

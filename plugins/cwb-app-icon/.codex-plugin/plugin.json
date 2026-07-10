@@ -1,0 +1,27 @@
+{
+  "name": "cwb-app-icon",
+  "version": "1.0.1",
+  "description": "AI-powered app icon generation for React Native and Expo apps, with iOS 26 Liquid Glass and Android adaptive icon support.",
+  "author": {
+    "name": "Beto",
+    "email": "beto@codewithbeto.dev",
+    "url": "https://codewithbeto.dev"
+  },
+  "homepage": "https://codewithbeto.dev",
+  "repository": "https://github.com/Code-with-Beto/skills",
+  "license": "MIT",
+  "keywords": ["expo", "react-native", "app-icon", "ios", "android", "snapai"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CWB App Icon",
+    "shortDescription": "Generate AI-powered app icons for Expo apps",
+    "longDescription": "Generate professional app icons using AI (powered by SnapAI CLI) and configure them automatically for iOS and Android. Supports the iOS 26 .icon folder format with Liquid Glass effects, Android adaptive icons with Material You theming, and multiple style options like minimalism, glassy, gradient, and neon.",
+    "developerName": "Code with Beto",
+    "category": "Developer Tools",
+    "websiteURL": "https://codewithbeto.dev",
+    "defaultPrompt": [
+      "Generate a new app icon for my Expo app",
+      "Update my app icon with iOS 26 Liquid Glass support"
+    ]
+  }
+}

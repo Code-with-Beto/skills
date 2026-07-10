@@ -5,29 +5,28 @@
     "email": "beto@codewithbeto.dev"
   },
   "metadata": {
-    "description": "codewithbeto.dev plugins for Claude Code"
+    "description": "Code with Beto plugins for React Native and Expo developers"
   },
   "plugins": [
     {
       "name": "cwb-app-icon",
-      "source": {
-        "source": "plugins/cwb-app-icon"
-      },
-      "description": "codewithbeto.dev app icon for Claude Code"
+      "source": "./plugins/cwb-app-icon",
+      "description": "AI-powered app icon generation for React Native and Expo apps, with iOS 26 Liquid Glass and Android adaptive icon support"
     },
     {
       "name": "cwb-ship",
-      "source": {
-        "source": "plugins/cwb-ship"
-      },
+      "source": "./plugins/cwb-ship",
       "description": "Scaffold production-ready React Native apps using @codewithbeto/ship CLI"
     },
     {
       "name": "cwb-theming",
-      "source": {
-        "source": "plugins/cwb-theming"
-      },
+      "source": "./plugins/cwb-theming",
       "description": "Scaffold a unified cross-platform color theme system (native iOS + Android Material You) into an Expo Router app"
+    },
+    {
+      "name": "cwb-local-build",
+      "source": "./plugins/cwb-local-build",
+      "description": "Build release APK and simulator .app artifacts locally for Expo apps using gradlew and xcodebuild"
     }
   ]
 }

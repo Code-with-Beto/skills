@@ -1,0 +1,56 @@
+{
+  "name": "code-with-beto",
+  "interface": {
+    "displayName": "Code with Beto"
+  },
+  "plugins": [
+    {
+      "name": "cwb-app-icon",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cwb-app-icon"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "cwb-ship",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cwb-ship"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "cwb-theming",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cwb-theming"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "cwb-local-build",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cwb-local-build"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

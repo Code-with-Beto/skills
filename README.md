@@ -96,6 +96,25 @@ Scaffold a unified, cross-platform color system into an Expo Router app, using t
 
 ## Installation
 
+### Codex / ChatGPT desktop app
+
+Add this repo as a plugin marketplace from the Codex CLI:
+
+```bash
+codex plugin marketplace add Code-with-Beto/skills
+```
+
+Then restart the ChatGPT desktop app, open **Plugins** under Work or Codex, pick the **Code with Beto** marketplace, and install the plugins you want.
+
+### Claude Code
+
+```text
+/plugin marketplace add Code-with-Beto/skills
+/plugin install cwb-app-icon@cwb-plugins
+```
+
+### Any agent (skills only)
+
 Install all Code with Beto skills with a single command:
 
 ```bash
