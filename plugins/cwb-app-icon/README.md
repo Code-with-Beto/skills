@@ -79,13 +79,13 @@ If you want to try different styles:
 ## Requirements
 
 - Node.js and npm/npx
-- OpenAI API key (costs ~$0.04 per icon)
+- OpenAI API key (provider usage charges apply)
 - Expo project with app.json
 - SnapAI CLI (automatically used via npx)
 
 ## About SnapAI
 
-[SnapAI](https://github.com/betomoedano/snapai) is a free, open-source CLI built by the [Code with Beto](https://codewithbeto.dev) team. It uses your own OpenAI API key to generate icons — the only cost is standard OpenAI API usage (~$0.04 per icon). Your API key is stored in a local config file on your machine (`~/.snapai/config.json`) and is sent directly to OpenAI's API. SnapAI ships no telemetry, has no backend server, and collects zero data; credentials never leave your device.
+[SnapAI](https://github.com/betomoedano/snapai) is a free, open-source CLI built by the [Code with Beto](https://codewithbeto.dev) team. It uses your own provider API key to generate icons, with provider usage billed to your account. The key can be stored in a local config file (`~/.snapai/config.json`) or supplied through an environment variable. SnapAI ships no telemetry and has no intermediary backend.
 
 ## License
 

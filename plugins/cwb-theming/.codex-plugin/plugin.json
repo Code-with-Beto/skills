@@ -1,6 +1,6 @@
 {
   "name": "cwb-theming",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scaffold a unified cross-platform color theme system (native iOS + Android Material You) into an Expo Router app.",
   "author": {
     "name": "Beto",
@@ -18,6 +18,10 @@
     "longDescription": "Set up one color system that works on iOS and Android at once. Semantic tokens (background, text, link, ...) resolve to native iOS colors and Android Material You dynamic colors, flip with dark/light mode automatically, and are read through a single useColors() hook. Same theming pattern as the Platano template.",
     "developerName": "Code with Beto",
     "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
     "websiteURL": "https://codewithbeto.dev",
     "defaultPrompt": [
       "Set up theming and dark mode in my Expo app",

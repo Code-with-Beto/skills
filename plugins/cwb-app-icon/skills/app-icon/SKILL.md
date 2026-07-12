@@ -10,7 +10,7 @@ Generate professional app icons using AI and configure them for both iOS (with i
 
 ## Step 0: Verify SnapAI Setup (CRITICAL - DO THIS FIRST)
 
-[SnapAI](https://github.com/betomoedano/snapai) is a free, open-source CLI built by the [Code with Beto](https://codewithbeto.dev) team. It calls OpenAI's image API directly using your personal API key, which is stored locally at `~/.snapai/config.json`. SnapAI ships no telemetry, has no backend server, and collects zero data — your credentials never leave your device.
+[SnapAI](https://github.com/betomoedano/snapai) is a free, open-source CLI built by the [Code with Beto](https://codewithbeto.dev) team. It calls the selected image provider directly using the user's API key. A key can be stored locally at `~/.snapai/config.json` or supplied through an environment variable. SnapAI ships no telemetry and has no backend server.
 
 **Before attempting to generate icons, check if SnapAI is configured:**
 
@@ -21,18 +21,18 @@ npx snapai config --show
 
 2. **If the config check fails or shows no API key:**
    - SnapAI requires an OpenAI API key to generate icons
-   - Each icon costs approximately $0.04 via OpenAI's image generation API
    - Ask the user: "SnapAI requires an OpenAI API key. Do you have one, or would you like me to help you set it up?"
 
 3. **If the user has an API key:**
-   - Ask them to provide it securely
-   - Configure it for them with:
+   - Never ask the user to paste the secret into chat, source code, or a command you will run
+   - Ask them to configure it locally in their own terminal with:
    ```bash
-   snapai config --api-key <their-api-key>
+   npx snapai config --openai-api-key "<their-api-key>"
    ```
-   - Verify the setup worked:
+   - Alternatively, they can set `SNAPAI_API_KEY` or `OPENAI_API_KEY` in their shell or secret manager
+   - After the user confirms setup is complete, verify it without printing the secret:
    ```bash
-   snapai config --show
+   npx snapai config --show
    ```
 
 4. **If the user needs to get an API key:**
@@ -42,15 +42,13 @@ npx snapai config --show
      2. Navigate to API keys section
      3. Click 'Create new secret key'
      4. Copy the key (starts with 'sk-')
-     5. Come back here and provide it to me"
-   - Once they provide the key, configure it using the command above
+     5. Configure it locally without sharing it in chat"
 
 **Important Notes:**
-- SnapAI is open source — your API key is stored in a local config file and sent directly to OpenAI. No intermediary servers, no data collection.
-- The tool itself is free; you only pay standard OpenAI API costs (~$0.04 per icon).
+- SnapAI is open source. API requests go directly to the selected provider; the tool has no intermediary backend.
+- The tool itself is free; provider API usage is billed according to the user's provider account.
 - Do NOT proceed with icon generation if SnapAI is not configured
-- The key must start with "sk-" to be valid
-- You can handle the configuration for the user - just ask for their API key
+- Do not expose credentials in chat, command output, logs, or committed files
 
 ## Step 1: Understand the App Context
 - Read the `app.json` to understand the app name and current icon configuration
@@ -258,8 +256,8 @@ npx expo run:android
 ## Troubleshooting
 
 ### SnapAI Configuration Issues
-- **"No API key found"** - Run `snapai config --api-key <key>` to set it up
-- **"Invalid API key"** - Verify the key starts with "sk-" and is copied correctly from OpenAI
+- **"No API key found"** - Ask the user to run `npx snapai config --openai-api-key "<key>"` locally, or set `SNAPAI_API_KEY` / `OPENAI_API_KEY`
+- **"Invalid API key"** - Ask the user to verify or rotate the key in their OpenAI account without sharing it in chat
 - **Authentication errors** - Check if the API key has been revoked or has insufficient credits at platform.openai.com
 - **Command not found** - Ensure you're using `npx snapai` (not just `snapai`)
 

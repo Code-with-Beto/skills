@@ -1,6 +1,6 @@
 {
   "name": "cwb-local-build",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build release APK and simulator .app artifacts locally for Expo apps using gradlew and xcodebuild directly.",
   "author": {
     "name": "Beto",
@@ -18,6 +18,10 @@
     "longDescription": "Generate release .apk and simulator .app artifacts for your Expo project using gradlew and xcodebuild directly. Reads your app config to pull the app name, slug, scheme, and bundle identifier, writes ready-to-run build scripts, and copies each artifact into builds/ for predictable install paths. Great for e2e testing (Maestro, Detox) and sharing builds without a dev server.",
     "developerName": "Code with Beto",
     "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
     "websiteURL": "https://codewithbeto.dev",
     "defaultPrompt": [
       "Build a release APK for my Expo app locally",

@@ -4,7 +4,7 @@ Professional agent skills and plugins to help mobile developers ship better apps
 
 ## Overview
 
-This repository contains a curated collection of Claude agent skills designed specifically for React Native and Expo developers. Each skill automates complex workflows, follows best practices, and helps you build production-ready mobile apps with confidence.
+This repository contains a curated collection of ChatGPT, Codex, and Claude agent skills designed specifically for React Native and Expo developers. Each skill automates complex workflows, follows best practices, and helps you build production-ready mobile apps with confidence.
 
 ## Available Plugins
 
@@ -104,7 +104,12 @@ Add this repo as a plugin marketplace from the Codex CLI:
 codex plugin marketplace add Code-with-Beto/skills
 ```
 
-Then restart the ChatGPT desktop app, open **Plugins** under Work or Codex, pick the **Code with Beto** marketplace, and install the plugins you want.
+Then install the plugins from the **Code with Beto** marketplace:
+
+- In Codex CLI, run `/plugins`, install the plugin, and start a new session.
+- In the ChatGPT desktop app, restart the app, open **Plugins** under Work or Codex, choose **Code with Beto**, and install the plugins you want.
+
+Each plugin includes a Codex manifest at `.codex-plugin/plugin.json`; the repo marketplace is defined at `.agents/plugins/marketplace.json`.
 
 ### Claude Code
 
@@ -140,7 +145,7 @@ npx skills add code-with-beto/skills/plugins/cwb-theming
 
 ## How It Works
 
-These skills integrate with Claude Code to provide contextual, automated workflows. When you describe what you need, Claude will:
+These skills integrate with ChatGPT, Codex, Claude Code, and other compatible agents to provide contextual, automated workflows. When you describe what you need, the agent will:
 
 1. Detect which skill is relevant to your task
 2. Execute the appropriate workflow automatically
