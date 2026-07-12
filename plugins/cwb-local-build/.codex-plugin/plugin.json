@@ -1,6 +1,6 @@
 {
   "name": "cwb-local-build",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Build release APK and simulator .app artifacts locally for Expo apps using gradlew and xcodebuild directly.",
   "author": {
     "name": "Beto",
@@ -10,7 +10,7 @@
   "homepage": "https://codewithbeto.dev",
   "repository": "https://github.com/Code-with-Beto/skills",
   "license": "MIT",
-  "keywords": ["expo", "react-native", "build", "apk", "xcodebuild", "gradle"],
+  "keywords": ["expo", "react-native", "build", "apk", "xcodebuild", "gradle", "codewithbeto"],
   "skills": "./skills/",
   "interface": {
     "displayName": "CWB Local Build",
@@ -23,6 +23,11 @@
       "Write"
     ],
     "websiteURL": "https://codewithbeto.dev",
+    "privacyPolicyURL": "https://codewithbeto.dev/privacy",
+    "termsOfServiceURL": "https://codewithbeto.dev/terms",
+    "brandColor": "#000000",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
     "defaultPrompt": [
       "Build a release APK for my Expo app locally",
       "Create a simulator .app build for e2e testing"
