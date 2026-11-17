@@ -1,54 +1,17 @@
 {
   "name": "code-with-beto",
   "interface": {
-    "displayName": "Code with Beto"
+    "displayName": "Code with Beto Public Skills"
   },
   "plugins": [
     {
-      "name": "cwb-app-icon",
+      "name": "code-with-beto",
       "source": {
         "source": "local",
-        "path": "./plugins/cwb-app-icon"
+        "path": "./plugins/code-with-beto"
       },
       "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "cwb-ship",
-      "source": {
-        "source": "local",
-        "path": "./plugins/cwb-ship"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "cwb-theming",
-      "source": {
-        "source": "local",
-        "path": "./plugins/cwb-theming"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "cwb-local-build",
-      "source": {
-        "source": "local",
-        "path": "./plugins/cwb-local-build"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "installation": "AVAILABLE"
       },
       "category": "Developer Tools"
     }

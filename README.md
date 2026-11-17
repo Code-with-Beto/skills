@@ -1,185 +1,54 @@
-# Code with Beto Skills
+# Code with Beto Public Skills
 
-Professional agent skills and plugins to help mobile developers ship better apps faster with AI assistance.
+Ten skills for people building their own mobile apps. Use them with an idea, screenshots, or your own code. The pack works independently of Code with Beto accounts, templates, and MCP.
 
-## Overview
+| Skill | Ask for |
+| --- | --- |
+| `cwb-ship-coach` | A workable first version, stack choice, and build milestones |
+| `cwb-onboarding` | A shorter path from first launch to the first useful result |
+| `cwb-mobile-ui` | A review or improvement of one mobile screen or interaction |
+| `theming` | Consistent light and dark colors across the UI and navigation |
+| `cwb-local-first` | Offline data, migrations, and tests for data recovery |
+| `cwb-ai-image-flow` | A reliable flow from image input to a useful result |
+| `cwb-monetization` | Paywall, purchase, access, and restoration flows |
+| `app-icon` | An icon brief, platform assets, and integration checks |
+| `local-build` | A local iOS or Android build you can install and test |
+| `cwb-app-launch` | A beta or store release readiness check |
 
-This repository contains a curated collection of ChatGPT, Codex, and Claude agent skills designed specifically for React Native and Expo developers. Each skill automates complex workflows, follows best practices, and helps you build production-ready mobile apps with confidence.
+## Install the public pack
 
-## Available Plugins
+### Codex
 
-### 🎨 App Icon Plugin
-
-AI-powered app icon generation with full iOS 26 Liquid Glass support and Android adaptive icons.
-
-**Features:**
-
-- Generate professional app icons using AI (powered by OpenAI via SnapAI CLI)
-- Full iOS 26 `.icon` folder format with Liquid Glass effect support
-- Android adaptive icons with Material You theming integration
-- Automatic `app.json` configuration for both platforms
-- Multiple style options: minimalism, glassy, gradient, neon, material, and more
-- Transparent backgrounds for better platform integration
-
-**Use cases:**
-
-- Starting a new Expo app and need an icon quickly
-- Updating existing app icons with fresh designs
-- Need proper iOS 26 and Android 13+ support
-- Iterate on multiple icon concepts rapidly
-
-[View full documentation →](plugins/cwb-app-icon/README.md)
-
-### 🚀 Ship Plugin
-
-Scaffold production-ready React Native apps from Code with Beto templates using the `@codewithbeto/ship` CLI.
-
-**Features:**
-
-- One-command project scaffolding with `bunx @codewithbeto/ship`
-- Pre-configured RevenueCat payments integration
-- Automatic app name, bundle ID, and slug configuration
-- Dependency installation and git initialization out of the box
-- Non-interactive flag-based mode for AI agent compatibility
-
-**Use cases:**
-
-- Ship a revenue-ready AI image app this weekend
-- Skip boilerplate and start building features immediately
-- Scaffold from the battle-tested Platano template
-- Automate project creation in CI or with AI agents
-
-[View full documentation →](plugins/cwb-ship/README.md)
-
-### 🛠 Local Build Plugin
-
-Generate release `.apk` and simulator `.app` artifacts for your Expo project using `gradlew` and `xcodebuild` directly.
-
-**Features:**
-
-- Reads your `app.config.ts` / `app.json` to pull app name, slug, scheme, and bundle identifier
-- Verifies the iOS scheme on disk so the build command matches what Xcode generated
-- Writes `scripts/build-android.sh` and `scripts/build-ios.sh` with your real values baked in
-- Copies each artifact into `builds/` (replacing the previous one) for predictable install paths
-- Defaults to **Release** to avoid the `expo-dev-client` launcher screen
-
-**Use cases:**
-
-- Producing APKs and `.app` bundles for e2e tests (Maestro, Detox)
-- Sharing a real build with a teammate without spinning up a dev server
-- Iterating on a local device or simulator without waiting on remote builds
-
-[View full documentation →](plugins/cwb-local-build/README.md)
-
-### 🎨 Theming Plugin
-
-Scaffold a unified, cross-platform color system into an Expo Router app, using the same theming pattern as the Platano template.
-
-**Features:**
-
-- Semantic system tokens (`background`, `text`, `secondaryText`, `separator`, `link`, ...) that resolve to native iOS colors and Android Material You dynamic colors
-- Brand colors with optional Android Material You dynamic resolution
-- Automatic dark/light re-rendering via `useColorScheme()` and the navigation `ThemeProvider`
-- A `useColors()` / `useTheme()` / `useBrand()` context hook built on React's `use`
-- Adds a theme context if you don't have one and wires your root `_layout.tsx` without clobbering existing providers
-
-**Use cases:**
-
-- Setting up theming or dark mode in an Expo / React Native app
-- Getting native iOS + Android Material You colors from one set of names
-- Replacing scattered `Platform.OS` color branching with a single `useColors()` hook
-- Following the "Expo UI on Android" lesson and wanting Platano-style theming
-
-**Requires Expo SDK 56+** (older SDKs work with hex tokens and the React Navigation `ThemeProvider`).
-
-[View full documentation →](plugins/cwb-theming/README.md)
-
-## Installation
-
-### Codex / ChatGPT desktop app
-
-Add this repo as a plugin marketplace from the Codex CLI:
-
-```bash
+```sh
 codex plugin marketplace add Code-with-Beto/skills
+codex plugin add code-with-beto@code-with-beto
 ```
-
-Then install the plugins from the **Code with Beto** marketplace:
-
-- In Codex CLI, run `/plugins`, install the plugin, and start a new session.
-- In the ChatGPT desktop app, restart the app, open **Plugins** under Work or Codex, choose **Code with Beto**, and install the plugins you want.
-
-Each plugin includes a Codex manifest at `.codex-plugin/plugin.json`; the repo marketplace is defined at `.agents/plugins/marketplace.json`.
 
 ### Claude Code
 
 ```text
 /plugin marketplace add Code-with-Beto/skills
-/plugin install cwb-app-icon@cwb-plugins
+/plugin install code-with-beto@cwb-plugins
 ```
 
-### Any agent (skills only)
+### Other skill-compatible agents
 
-Install all Code with Beto skills with a single command:
-
-```bash
-npx skills add code-with-beto/skills
+```sh
+npx skills add Code-with-Beto/skills
 ```
 
-Or install individual plugins:
+You can also download the ZIP from the [latest GitHub release](https://github.com/Code-with-Beto/skills/releases/latest).
 
-```bash
-npx skills add code-with-beto/skills/plugins/cwb-app-icon
-npx skills add code-with-beto/skills/plugins/cwb-ship
-npx skills add code-with-beto/skills/plugins/cwb-local-build
-npx skills add code-with-beto/skills/plugins/cwb-theming
-```
+### Switching from an earlier version
 
-## Requirements
+Refresh the Code with Beto marketplace, then install the `code-with-beto` plugin. If you already added the marketplace in Codex, run `codex plugin marketplace upgrade code-with-beto`. In Claude Code, run `/plugin marketplace update cwb-plugins`. The `app-icon`, `local-build`, and `theming` skills are included in the new pack. Remove obsolete individual plugin installations if your agent still shows them.
 
-- Node.js 16+
-- npm or npx
-- Expo CLI (for app icon plugin)
-- OpenAI API key (for AI-powered icon generation)
-- [Bun](https://bun.sh/) runtime (for ship plugin)
+## Pro skills
 
-## How It Works
+Project-specific skills are available through [your Code with Beto profile](https://codewithbeto.dev/profile) with Pro Lifetime Access. Open **Pro Skills** to download `ship` for Platano.
 
-These skills integrate with ChatGPT, Codex, Claude Code, and other compatible agents to provide contextual, automated workflows. When you describe what you need, the agent will:
-
-1. Detect which skill is relevant to your task
-2. Execute the appropriate workflow automatically
-3. Handle configuration, file generation, and setup
-4. Provide clear instructions for testing and next steps
-
-No manual configuration needed - just describe what you want to build.
-
-## Why Use These Skills?
-
-- **Save Time:** Automate repetitive mobile dev tasks that normally take hours
-- **Best Practices:** Built-in knowledge of iOS and Android platform requirements
-- **Stay Current:** Updated for the latest platform features (iOS 26, Android 13+)
-- **Learn by Doing:** Each skill explains what it's doing and why
-- **Battle-Tested:** Used by Code with Beto students building production apps
-
-## Support
-
-- 📚 Learn React Native & Expo: [codewithbeto.dev](https://codewithbeto.dev)
-- 💬 Questions or issues? [Open an issue](https://github.com/code-with-beto/skills/issues)
-- 🐦 Follow updates: [@codewithbeto](https://x.com/betomoedano)
-
-## Contributing
-
-Contributions welcome! If you have ideas for new skills or improvements:
-
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request with clear description
+The public pack works with your own idea or project. Some workflows, such as builds and image generation, can use a platform toolchain or your choice of external service.
 
 ## License
 
-MIT - feel free to use in personal and commercial projects.
-
----
-
-Made with ❤️ for the mobile dev community by [Code with Beto](https://codewithbeto.dev)
+MIT. See [LICENSE](LICENSE).

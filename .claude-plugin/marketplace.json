@@ -1,32 +1,16 @@
 {
   "name": "cwb-plugins",
   "owner": {
-    "name": "Beto",
-    "email": "beto@codewithbeto.dev"
+    "name": "Code with Beto"
   },
   "metadata": {
-    "description": "Code with Beto plugins for React Native and Expo developers"
+    "description": "Ten public skills for building and shipping your own mobile app."
   },
   "plugins": [
     {
-      "name": "cwb-app-icon",
-      "source": "./plugins/cwb-app-icon",
-      "description": "AI-powered app icon generation for React Native and Expo apps, with iOS 26 Liquid Glass and Android adaptive icon support"
-    },
-    {
-      "name": "cwb-ship",
-      "source": "./plugins/cwb-ship",
-      "description": "Scaffold production-ready React Native apps using @codewithbeto/ship CLI"
-    },
-    {
-      "name": "cwb-theming",
-      "source": "./plugins/cwb-theming",
-      "description": "Scaffold a unified cross-platform color theme system (native iOS + Android Material You) into an Expo Router app"
-    },
-    {
-      "name": "cwb-local-build",
-      "source": "./plugins/cwb-local-build",
-      "description": "Build release APK and simulator .app artifacts locally for Expo apps using gradlew and xcodebuild"
+      "name": "code-with-beto",
+      "source": "./plugins/code-with-beto",
+      "description": "Ten public skills for building and shipping your own mobile app."
     }
   ]
 }

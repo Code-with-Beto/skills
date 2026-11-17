@@ -1,0 +1,12 @@
+{
+  "name": "code-with-beto",
+  "version": "1.0.0",
+  "description": "Ten public skills for planning, building, testing, and shipping your own mobile app.",
+  "author": {
+    "name": "Code with Beto",
+    "url": "https://codewithbeto.dev"
+  },
+  "homepage": "https://codewithbeto.dev",
+  "repository": "https://github.com/Code-with-Beto/skills",
+  "license": "MIT"
+}

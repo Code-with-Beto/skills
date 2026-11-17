@@ -1,0 +1,28 @@
+{
+  "name": "code-with-beto",
+  "version": "1.0.0",
+  "description": "Ten public skills for planning, building, testing, and shipping your own mobile app.",
+  "author": {
+    "name": "Code with Beto",
+    "url": "https://codewithbeto.dev"
+  },
+  "homepage": "https://codewithbeto.dev",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Code with Beto Public Skills",
+    "shortDescription": "Build and ship your own mobile app",
+    "longDescription": "Ten standalone skills for app planning, onboarding, mobile UI, themes, offline data, image generation, monetization, app icons, local builds, and release. Includes optional examples from Code with Beto.",
+    "developerName": "Code with Beto",
+    "category": "Developer Tools",
+    "websiteURL": "https://codewithbeto.dev",
+    "defaultPrompt": [
+      "Turn my app idea into one useful flow I can build and test.",
+      "Review my mobile onboarding and tell me where users get stuck.",
+      "Check whether my app is ready for a beta release."
+    ],
+    "privacyPolicyURL": "https://codewithbeto.dev/privacy",
+    "termsOfServiceURL": "https://codewithbeto.dev/terms"
+  },
+  "repository": "https://github.com/Code-with-Beto/skills",
+  "license": "MIT"
+}

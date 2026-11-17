@@ -1,9 +1,0 @@
-{
-  "name": "cwb-theming",
-  "version": "1.0.0",
-  "description": "Scaffold a unified cross-platform color theme system (native iOS + Android Material You) into an Expo Router app",
-  "author": {
-    "name": "Beto",
-    "email": "beto@codewithbeto.dev"
-  }
-}
